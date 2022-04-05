@@ -4,6 +4,7 @@ const spinner = document.querySelector(".spinner")
 const movieDiv = document.querySelector(".movie")
 const ul = document.querySelector(".characters")
 const api = "https://swapi.dev/api/films/"
+const main = document.querySelector("main")
 
 const episodeIDMap = {
     1: 4,
@@ -32,6 +33,10 @@ function addCharacters(character) {
 const movieID = episodeIDMap[queryString.get("movie")]
 console.log(movieID)
 
+const backButton = document.createElement("div")
+backButton.classList.add("back-button")
+backButton.innerHTML = `<a href="index.html">Back to List</a>`
+main.append(backButton)
 
 fetch(`https://swapi.dev/api/films/${movieID}`)
     .then(response => {
