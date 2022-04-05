@@ -14,7 +14,7 @@ function addFilm(film) {
     div.classList.add("movie-listing")
     div.innerHTML = `
     <img src="${film.Poster}" alt="${film.Title}"/>
-    <a href="swapi.dev?film=${film.Title}">${film.Title}</a>
+    <a href="movie.html?movie=${film.Title}">${film.Title}</a>
     <time>${film.Year}</time>
     `
     movieListings.append(div)

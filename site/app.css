@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
-body{
+body {
     font-family: 'Bebas Neue', cursive;
     color: white;
     margin: 0%;
@@ -9,45 +8,45 @@ body{
     flex-flow: column nowrap;
     align-items: center;
     font-size: 16px;
-    background: url(stars.jpg) no-repeat center center fixed; 
+    background: url(stars.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 
-.spinner{
+.spinner {
     margin-top: 2em;
     margin-bottom: 2em;
     align-items: center;
     height: 10em;
 }
 
-.hidden{
+.hidden {
     display: none;
 }
 
-h1{
+h1 {
     font-size: 6em;
     margin-top: 1em;
 }
 
-h1 > a{
+h1>a {
     text-decoration: none;
     color: #f9d71c;
 }
 
-h2{
+h2 {
     font-size: 4em;
     text-align: center;
     margin-top: 1em;
 }
 
-.movie-listings{
+.movie-listings {
     margin-top: 3em;
 }
 
-div{
+div {
     padding: 1.5em;
     text-align: center;
     display: flex;
@@ -57,11 +56,11 @@ div{
     font-size: 1.25em;
 }
 
-.movie-listing{
+.movie-listing {
     color: white;
 }
 
-.movie-listing > a{
+.movie-listing>a {
     text-decoration: none;
     color: #f9d71c;
 }
