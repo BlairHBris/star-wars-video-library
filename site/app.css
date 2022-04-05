@@ -43,6 +43,25 @@ h2{
     margin-top: 1em;
 }
 
-#movie-listing{
+.movie-listings{
+    margin-top: 3em;
+}
+
+div{
+    padding: 1.5em;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 50em;
+    justify-content: space-evenly;
+    font-size: 1.25em;
+}
+
+.movie-listing{
     color: white;
+}
+
+.movie-listing > a{
+    text-decoration: none;
+    color: #f9d71c;
 }
