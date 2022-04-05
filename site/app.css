@@ -52,18 +52,25 @@ div {
     text-align: center;
     display: flex;
     flex-flow: row wrap;
-    max-width: 50em;
+    max-width: 40em;
     justify-content: space-evenly;
-    font-size: 1.25em;
+    font-size: 1.5em;
 }
 
-.movie-listing {
+.movie-listing,
+.movie {
     color: white;
 }
 
-.movie-listing>a {
+.movie-listing a,
+.movie a {
     text-decoration: none;
     color: #f9d71c;
+}
+
+.movie a,
+.movie time {
+    font-size: 1.75em;
 }
 
 img{
@@ -71,3 +78,12 @@ img{
     margin-bottom: 1em;
 }
 
+ul{
+    margin-bottom: 4em;
+    font-size: 2em;
+    text-align: center;
+}
+
+.headerchar{
+    color: #f9d71c;
+}
