@@ -17,6 +17,8 @@ fetch(api)
         responses[1].poster = "https://m.media-amazon.com/images/M/MV5BYmU1NDRjNDgtMzhiMi00NjZmLTg5NGItZDNiZjU5NTU4OTE0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
         responses[2].poster = "https://m.media-amazon.com/images/M/MV5BMTBhNDhiOWYtNTc2NC00ZmRiLWI5ZGQtNDhmNTkxOGYyZWNhXkEyXkFqcGdeQXVyMTEwNDU1MzEy._V1_SX300.jpg"
         responses[3].poster = "https://m.media-amazon.com/images/M/MV5BYTRhNjcwNWQtMGJmMi00NmQyLWE2YzItODVmMTdjNWI0ZDA2XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"
+        responses[4].poster = "https://m.media-amazon.com/images/M/MV5BMDAzM2M0Y2UtZjRmZi00MzVlLTg4MjEtOTE3NzU5ZDVlMTU5XkEyXkFqcGdeQXVyNDUyOTg3Njg@._V1_SX300.jpg"
+        responses[5].poster = "https://m.media-amazon.com/images/M/MV5BNTc4MTc3NTQ5OF5BMl5BanBnXkFtZTcwOTg0NjI4NA@@._V1_SX300.jpg"
         console.log(responses)
         spinner.classList.add("hidden")
         responses.forEach(response => {

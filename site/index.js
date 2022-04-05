@@ -9,6 +9,9 @@ const clones = "http://www.omdbapi.com/?t=Star+Wars%3A+Episode+II-+Attack+of+the
 const revenge = "http://www.omdbapi.com/?t=revenge+of+the+sith&apikey=b5743b67"
 
 
+
+
+
 function addFilm(film) {
     const div = document.createElement("div")
     div.classList.add("movie-listing")
