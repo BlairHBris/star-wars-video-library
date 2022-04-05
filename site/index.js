@@ -54,3 +54,15 @@ fetch(empire)
         console.log(response)
         addPicture(response)
     })
+fetch(returnOfTheJedi)
+    .then(response => {
+        return response.json()
+    }).then(response => {
+        addPicture(response)
+    })
+fetch(phantom)
+    .then(response => {
+        return response.json()
+    }).then(response => {
+        addPicture(response)
+    })
