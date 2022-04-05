@@ -15,6 +15,8 @@ fetch(api)
     }).then(responses => {
         responses[0].poster = "https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
         responses[1].poster = "https://m.media-amazon.com/images/M/MV5BYmU1NDRjNDgtMzhiMi00NjZmLTg5NGItZDNiZjU5NTU4OTE0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
+        responses[2].poster = "https://m.media-amazon.com/images/M/MV5BMTBhNDhiOWYtNTc2NC00ZmRiLWI5ZGQtNDhmNTkxOGYyZWNhXkEyXkFqcGdeQXVyMTEwNDU1MzEy._V1_SX300.jpg"
+        responses[3].poster = "https://m.media-amazon.com/images/M/MV5BYTRhNjcwNWQtMGJmMi00NmQyLWE2YzItODVmMTdjNWI0ZDA2XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"
         console.log(responses)
         spinner.classList.add("hidden")
         responses.forEach(response => {
