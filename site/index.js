@@ -24,6 +24,7 @@ fetch(newHope)
     .then(response => {
         return response.json()
     }).then(response => {
+        spinner.classList.add("hidden")
         addFilm(response)
     })
 
@@ -31,29 +32,34 @@ fetch(empire)
     .then(response => {
         return response.json()
     }).then(response => {
+        spinner.classList.add("hidden")
         addFilm(response)
     })
 fetch(returnOfTheJedi)
     .then(response => {
         return response.json()
     }).then(response => {
+        spinner.classList.add("hidden")
         addFilm(response)
     })
 fetch(phantom)
     .then(response => {
         return response.json()
     }).then(response => {
+        spinner.classList.add("hidden")
         addFilm(response)
     })
 fetch(clones)
     .then(response => {
         return response.json()
     }).then(response => {
+        spinner.classList.add("hidden")
         addFilm(response)
     })
 fetch(revenge)
     .then(response => {
         return response.json()
     }).then(response => {
+        spinner.classList.add("hidden")
         addFilm(response)
     })
