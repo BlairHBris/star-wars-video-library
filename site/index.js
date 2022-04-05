@@ -13,68 +13,47 @@ function addFilm(film) {
     const div = document.createElement("div")
     div.classList.add("movie-listing")
     div.innerHTML = `
-    <a href="swapi.dev?film=${film.title}">${film.title}</a>
-    <time>${film.release_date}</time>
+    <img src="${film.Poster}" alt="${film.Title}"/>
+    <a href="swapi.dev?film=${film.Title}">${film.Title}</a>
+    <time>${film.Year}</time>
     `
     movieListings.append(div)
 }
-
-function addPicture(film) {
-    const img = document.createElement("img")
-    img.src = `${film.Poster}`
-    movieListings.append(img)
-}
-
-fetch(api)
-    .then(response => {
-        return response.json()
-    }).then(parsedResponse => {
-        const urls = parsedResponse.results.map(result => result.url)
-        const fetches = urls.map(url => fetch(url).then(response => response.json()))
-        return Promise.all(fetches)
-    }).then(responses => {
-        spinner.classList.add("hidden")
-        responses.forEach(response => {
-            addFilm(response)
-        })
-    })
 
 fetch(newHope)
     .then(response => {
         return response.json()
     }).then(response => {
-        console.log(response)
-        addPicture(response)
+        addFilm(response)
     })
 
 fetch(empire)
     .then(response => {
         return response.json()
     }).then(response => {
-        console.log(response)
-        addPicture(response)
+        addFilm(response)
     })
 fetch(returnOfTheJedi)
     .then(response => {
         return response.json()
     }).then(response => {
-        addPicture(response)
+        addFilm(response)
     })
 fetch(phantom)
     .then(response => {
         return response.json()
     }).then(response => {
-        addPicture(response)
+        addFilm(response)
     })
 fetch(clones)
     .then(response => {
         return response.json()
     }).then(response => {
-        addPicture(response)
+        addFilm(response)
     })
 fetch(revenge)
     .then(response => {
         return response.json()
     }).then(response => {
-        addPicture(response)
+        addFilm(response)
     })
