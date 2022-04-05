@@ -5,7 +5,7 @@ const newHope = "http://www.omdbapi.com/?t=star+wars&apikey=b5743b67"
 const empire = "http://www.omdbapi.com/?t=empire+strikes+back&apikey=b5743b67"
 const returnOfTheJedi = "http://www.omdbapi.com/?t=return+of+the+jedi&apikey=b5743b67"
 const phantom = "http://www.omdbapi.com/?t=phantom+menace&apikey=b5743b67"
-const clones = "http://www.omdbapi.com/?t=attack+of+the+clones&apikey=b5743b67"
+const clones = "http://www.omdbapi.com/?t=Star+Wars%3A+Episode+II-+Attack+of+the+Clones&apikey=b5743b67"
 const revenge = "http://www.omdbapi.com/?t=revenge+of+the+sith&apikey=b5743b67"
 
 
@@ -61,6 +61,18 @@ fetch(returnOfTheJedi)
         addPicture(response)
     })
 fetch(phantom)
+    .then(response => {
+        return response.json()
+    }).then(response => {
+        addPicture(response)
+    })
+fetch(clones)
+    .then(response => {
+        return response.json()
+    }).then(response => {
+        addPicture(response)
+    })
+fetch(revenge)
     .then(response => {
         return response.json()
     }).then(response => {
