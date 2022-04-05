@@ -5,10 +5,11 @@ const swapi = "https://swapi.dev/api/films/"
 
 
 
-fetch(swapi)
+fetch(`https://swapi.dev/api/films/${query.get("films")}`)
     .then(response => {
         return response.json()
     }).then(parsedResponse => {
+        console.log(parsedResponse)
         const urls = parsedResponse.results.map(result => result.url)
         const fetches = urls.map(url => fetch(url).then(response => response.json()))
         return Promise.all(fetches)
