@@ -7,7 +7,7 @@ function addFilm(film) {
     div.classList.add("movie-listing")
     div.innerHTML = `
     <img src="${film.poster}" alt="${film.title}"/>
-    <a href="movie.html?movie=${film.title}">${film.title}</a>
+    <a href="movie.html?movie=${film.episode_id}">${film.title}</a>
     <time>${film.release_date}</time>
     `
     movieListings.append(div)
