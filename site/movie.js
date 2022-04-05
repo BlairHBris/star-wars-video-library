@@ -5,7 +5,7 @@ const movieDiv = document.querySelector(".movie")
 const ul = document.querySelector(".characters")
 const api = "https://swapi.dev/api/films/"
 
-fetch(api)
+fetch(`https://swapi.dev/api/films/${query.get("film")}`)
     .then(response => {
         return response.json()
     }).then(parsedResponse => {
